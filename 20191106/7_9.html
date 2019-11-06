@@ -1,0 +1,22 @@
+package org.javaro.lecture;
+
+public class Ex7_9 {  //Midterm
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student stud1 = new Student("20181388", "윤지한", 3);
+
+		// stud1.exam[0].setExamScore("자바",88);
+		// stud1.exam[1].setExamScore("C",91);
+		// stud1.exam[2].setExamScore("C++",92);
+
+		stud1.exam[0].setSubject("자바");
+		stud1.exam[0].setSubject("C");
+		stud1.exam[0].setSubject("C++");
+		stud1.exam[0].setScore(89);
+		stud1.exam[0].setScore(90);
+		stud1.exam[0].setScore(100);
+
+		stud1.printGPA();
+	}
+}
