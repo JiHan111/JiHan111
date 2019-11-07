@@ -27,7 +27,7 @@ class Animal2 {
 	}
 }
 
-class Cat2w extends Animal2 {
+class Cat2 extends Animal2 {
 	public String crawling() {
 		return "나무오르기";
 	}
