@@ -1,0 +1,31 @@
+package org.javaro.lecture;
+import org.javaro.lecture.*;
+public class MainProg {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bank myStore = new Bank("은행");
+		Money money1 = new Money("1억원"); 
+		Money money2 = new Money("1억원");
+		money1.setStaff("김직원");
+		money2.setStaff("박직원");
+		Customer customer1 = new Customer();
+		Customer customer2 = new Customer();
+		customer1.setName("윤지한");  
+		customer2.setName("이지한");
+		myStore.addMoney(money1); 
+		myStore.addMoney(money2);
+		myStore.addCustomer(customer1); 
+		myStore.addCustomer(customer2);
+		System.out.println("은행 대출 관리 시스템 생성");
+		myStore.printStatus();
+		System.out.println("money1 1억원을 customer2 이지한 에게 대출");
+		myStore.checkOut(money1,customer2);
+		myStore.printStatus();
+		System.out.println("money1 1억원 갚음");
+		myStore.checkIn(money1);
+		System.out.println("money2 1억원  customer1 윤지한에게 대출");
+		myStore.checkOut(money2,customer1);
+		myStore.printStatus();
+	}
+
+}
